@@ -1,4 +1,4 @@
-package primitives;
+package main.java.primitives;
 
 public class Strings {
     public static void main(String[] args) {

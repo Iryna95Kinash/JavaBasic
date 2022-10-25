@@ -1,4 +1,4 @@
-package primitives;
+package main.java.primitives;
 
 public class AllPrimitiveTypes {
     public static void main(String[] args) {
