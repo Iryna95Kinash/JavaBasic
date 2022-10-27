@@ -12,7 +12,6 @@ public class Strings {
         String str2 = "Mango";
 
 
-
         System.out.println(name + " " + surname + " " + "from" + " " + bornPlace);
         System.out.println("\nUkrainian poet was born in " + birth);
 

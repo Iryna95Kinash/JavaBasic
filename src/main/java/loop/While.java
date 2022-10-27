@@ -5,15 +5,15 @@ public class While {
 
         int value = 1;
 
-        while(value < 5){
+        while (value < 5) {
             System.out.println("Infinity " + value);
         }
 
-        while(value > 5){
+        while (value > 5) {
             System.out.println("Infinity that will never start");
         }
 
-        while(value < 11){
+        while (value < 11) {
             System.out.println("Iteration # " + value);
             value = value + 1;
         }
