@@ -43,14 +43,14 @@ public class Arrays {
         }
 
         System.out.println();
-        for (short n = 0; n < myShort.length; n++) {
-            myShort[n] = (short) (n + 1);
-            System.out.print(myShort[n] + " ");
+        for (short j = 0; j < myShort.length; j++) {
+            myShort[j] = (short) (j + 1);
+            System.out.print(myShort[j] + " ");
         }
 
         System.out.println();
-        for (int c = 0; c<myChar.length; c++) {
-            System.out.print(myChar[c] + " ");
+        for (int i = 0; i<myChar.length; i++) {
+            System.out.print(myChar[i] + " ");
         }
 
         System.out.println();
@@ -60,26 +60,26 @@ public class Arrays {
         }
 
         System.out.println();
-        for (float b = 0; b < myFloat.length; b++) {
-            myFloat[(int) b] = (float) (b + 0.579);
-            System.out.print(myFloat[(int) b] + " ");
+        for (float i = 0; i < myFloat.length; i++) {
+            myFloat[(int) i] = (float) (i + 0.579);
+            System.out.print(myFloat[(int) i] + " ");
         }
 
         System.out.println();
-        for (long x = 0; x < myLong.length; x++) {
-            myLong[(int) x] = x + 2500;
-            System.out.print(myLong[(int) x] + " ");
+        for (long j = 0; j < myLong.length; j++) {
+            myLong[(int) j] = j + 2500;
+            System.out.print(myLong[(int) j] + " ");
         }
 
         System.out.println();
-        for (double d = 0; d < myDoub.length; d++) {
-            myDoub[(int) d] = d + 1.33;
-            System.out.print(myDoub[(int) d] + " ");
+        for (double i = 0; i < myDoub.length; i++) {
+            myDoub[(int) i] = i + 1.33;
+            System.out.print(myDoub[(int) i] + " ");
         }
 
         System.out.println();
-        for (int g = 0; g<myString.length; g++) {
-            System.out.print(myString[g] + " ");
+        for (int j = 0; j<myString.length; j++) {
+            System.out.print(myString[j] + " ");
         }
     }
 }
