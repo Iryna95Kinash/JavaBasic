@@ -17,7 +17,7 @@ public class Car {
     }
 
     public void drive() {
-        if (engineOn == true) {
+        if (engineOn) {
             System.out.println("Car is driving...");
         } else {
             System.out.println("Start engine first");

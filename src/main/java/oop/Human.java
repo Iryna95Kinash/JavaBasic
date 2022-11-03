@@ -8,7 +8,7 @@ public class Human {
     String address;
 
 
-    public Human() {
+    public void sayHello() {
         System.out.println("Hello there");
     }
 
@@ -16,7 +16,7 @@ public class Human {
         System.out.println("Let me introduce myself:)... My name is " + name + " I'm " + age + " years old, my height is " + height + " centimetres and my weight is " + weight + " kg. Also, I live at " + address);
     }
 
-    public void farewell() {
+    public void sayGoodBye() {
         System.out.println("It's a pleasure meet you, good bye");
     }
 

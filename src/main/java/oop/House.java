@@ -6,18 +6,19 @@ public class House {
     String address;
     String color;
     String roofColor;
-    boolean serenaOff;
+    boolean serenaOn;
 
-    public void serena() {
-        serenaOff = true;
+    public void turnOnSerena() {
+        serenaOn = true;
         System.out.println("Your house in safe");
     }
 
     public void serenaOn() {
-        if (serenaOff == true) {
+        if (serenaOn) {
             System.out.println("Serena ON");
-        } else
+        } else {
             System.out.println("Serena OFF, please turn it ON");
+        }
     }
 
     public int getRoomCount() {
@@ -53,11 +54,11 @@ public class House {
     }
 
     public boolean isSerenaOff() {
-        return serenaOff;
+        return serenaOn;
     }
 
     public void setSerenaOff(boolean serenaOff) {
-        this.serenaOff = serenaOff;
+        this.serenaOn = serenaOff;
     }
 
     @Override
@@ -67,7 +68,7 @@ public class House {
                 ", address='" + address + '\'' +
                 ", color='" + color + '\'' +
                 ", roofColor='" + roofColor + '\'' +
-                ", serenaOff=" + serenaOff +
+                ", serenaOff=" + serenaOn +
                 '}';
     }
 }
