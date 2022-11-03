@@ -7,8 +7,6 @@ public class App {
         Human h = new Human();
         House house = new House();
 
-        System.out.println("Hello World");
-
         car.drive();
         car.startEngine();
         car.drive();
