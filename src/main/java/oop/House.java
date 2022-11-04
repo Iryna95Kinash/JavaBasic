@@ -2,11 +2,25 @@ package main.java.oop;
 
 
 public class House {
-    int roomCount;
     String address;
     String color;
     String roofColor;
+    int roomCount;
+    int constructionYear;
     boolean serenaOn;
+
+    public House() {
+    }
+
+    public House(String color) {
+        this.color = color;
+    }
+
+    public House(String address, int constructionYear, String color) {
+        this.address = address;
+        this.constructionYear = constructionYear;
+        this.color = color;
+    }
 
     public void turnOnSerena() {
         serenaOn = true;
@@ -19,6 +33,14 @@ public class House {
         } else {
             System.out.println("Serena OFF, please turn it ON");
         }
+    }
+
+    public void locatedIn(String address) {
+        System.out.println("The house is located in " + address);
+    }
+
+    public void builtIn(String roofColor, int constructionYear) {
+        System.out.println("The house with " + roofColor + " was built in " + constructionYear + " year");
     }
 
     public int getRoomCount() {
@@ -53,12 +75,20 @@ public class House {
         this.roofColor = roofColor;
     }
 
-    public boolean isSerenaOff() {
+    public boolean isSerenaOn() {
         return serenaOn;
     }
 
-    public void setSerenaOff(boolean serenaOff) {
-        this.serenaOn = serenaOff;
+    public void setSerenaOn(boolean serenaOn) {
+        this.serenaOn = serenaOn;
+    }
+
+    public int getConstructionYear() {
+        return constructionYear;
+    }
+
+    public void setConstructionYear(int constructionYear) {
+        this.constructionYear = constructionYear;
     }
 
     @Override
@@ -68,7 +98,8 @@ public class House {
                 ", address='" + address + '\'' +
                 ", color='" + color + '\'' +
                 ", roofColor='" + roofColor + '\'' +
-                ", serenaOff=" + serenaOn +
+                ", serenaOn=" + serenaOn +
+                ", constructionYear=" + constructionYear +
                 '}';
     }
 }
