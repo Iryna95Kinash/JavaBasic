@@ -8,7 +8,7 @@ public class App {
         Car car3 = new Car(200, 5, "Ukraine");
         Human h = new Human();
         Human h2 = new Human("Vika");
-        Human h3 = new Human(175, 55, 25)
+        Human h3 = new Human(175, 55, 25);
         House house = new House ();
         House house2 = new House("red");
         House house3 = new House("Halytskyi district", 1885, "brown");
