@@ -3,59 +3,69 @@ package main.java.oop;
 import java.time.LocalDate;
 
 public class Car {
+
     LocalDate productionDate;
     String model;
     String country;
     int maxSpeed;
     int sitsCount;
     boolean engineOn;
+    static int carCounter = 0;
 
     public Car() {
+        carCounter++;
     }
 
     public Car(String model, String country) {
         this.model = model;
         this.country = country;
+        carCounter++;
     }
 
     public Car(int maxSpeed, int sitsCount, String country) {
         this.maxSpeed = maxSpeed;
         this.sitsCount = sitsCount;
         this.country = country;
+        carCounter++;
+    }
+
+    public void countCars() {
+        Printer.printParam("Amount of cars is " + carCounter);
     }
 
     public void startEngine() {
         engineOn = true;
-        System.out.println("Engine started...");
+        Printer.printParam("Engine started...");
     }
+
 
     public void drive() {
         if (engineOn) {
-            System.out.println("Car is driving...");
+            Printer.printParam("Car is driving...");
         } else {
-            System.out.println("Start engine first");
+            Printer.printParam("Start engine first");
         }
     }
 
     public void drivingWithMaxSpeed() {
-        System.out.println("You can drive with max speed");
+        Printer.printParam("You can drive with max speed");
     }
 
     public void stopDriving() {
-        System.out.println("Stop your car...");
+        Printer.printParam("Stop your car...");
     }
 
     public void stopEngine() {
         engineOn = false;
-        System.out.println("Engine is stoped");
+        Printer.printParam("Engine is stoped");
     }
 
     public void includingPassengers(int sitsCount) {
-        System.out.println(sitsCount + " passengers can sit in the car");
+        Printer.printParam(sitsCount + " passengers can sit in the car");
     }
 
     public void madeCauntry(String country, String model) {
-        System.out.println(model + " made in " + country);
+        Printer.printParam(model + " made in " + country);
     }
 
 
