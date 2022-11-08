@@ -2,45 +2,54 @@ package main.java.oop;
 
 
 public class House {
+
     String address;
     String color;
     String roofColor;
     int roomCount;
     int constructionYear;
     boolean serenaOn;
+    static int houseCounter = 0;
 
     public House() {
+        houseCounter++;
     }
 
     public House(String color) {
         this.color = color;
+        houseCounter++;
     }
 
     public House(String address, int constructionYear, String color) {
         this.address = address;
         this.constructionYear = constructionYear;
         this.color = color;
+        houseCounter++;
+    }
+
+    public void countHouses() {
+        Printer.printParam("Amount of houses is " + houseCounter);
     }
 
     public void turnOnSerena() {
         serenaOn = true;
-        System.out.println("Your house in safe");
+        Printer.printParam("Your house in safe");
     }
 
     public void serenaOn() {
         if (serenaOn) {
-            System.out.println("Serena ON");
+            Printer.printParam("Serena ON");
         } else {
-            System.out.println("Serena OFF, please turn it ON");
+            Printer.printParam("Serena OFF, please turn it ON");
         }
     }
 
     public void locatedIn(String address) {
-        System.out.println("The house is located in " + address);
+        Printer.printParam("The house is located in " + address);
     }
 
     public void builtIn(String roofColor, int constructionYear) {
-        System.out.println("The house with " + roofColor + " was built in " + constructionYear + " year");
+        Printer.printParam("The house with " + roofColor + " was built in " + constructionYear + " year");
     }
 
     public int getRoomCount() {

@@ -1,6 +1,7 @@
 package main.java.oop;
 
 public class Human {
+
     String name;
     String address;
     int height;
@@ -8,38 +9,46 @@ public class Human {
     int age;
     int birthYear;
     int speed;
+    static int humanCounter = 0;
 
     public Human() {
+        humanCounter++;
     }
 
     public Human(String name) {
         this.name = name;
+        humanCounter++;
     }
 
     public Human(int height, int weight, int age) {
         this.height = height;
         this.weight = weight;
         this.age = age;
+        humanCounter++;
+    }
+
+    public void humanNumber() {
+        Printer.printParam("Number of people is " + humanCounter);
     }
 
     public void sayHello() {
-        System.out.println("Hello there");
+        Printer.printParam("Hello there");
     }
 
     public void introduce() {
-        System.out.println("Let me introduce myself:)... My name is " + name + " I'm " + age + " years old, my height is " + height + " centimetres and my weight is " + weight + " kg. Also, I live at " + address);
+        Printer.printParam("Let me introduce myself:)... My name is " + name + " I'm " + age + " years old, my height is " + height + " centimetres and my weight is " + weight + " kg. Also, I live at " + address);
     }
 
     public void running(int speed) {
-        System.out.println("Women run an average of " + speed + " km per hour");
+        Printer.printParam("Women run an average of " + speed + " km per hour");
     }
 
     public void birthIn(String name, int birthYear) {
-        System.out.println(name + " was born in " + birthYear);
+        Printer.printParam(name + " was born in " + birthYear);
     }
 
     public void sayGoodBye() {
-        System.out.println("It's a pleasure meet you, good bye");
+        Printer.printParam("It's a pleasure meet you, good bye");
     }
 
     public int getHeight() {
