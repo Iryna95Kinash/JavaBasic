@@ -2,17 +2,23 @@ package main.java.oop;
 
 import java.time.LocalDate;
 
-public class Car {
+public class Car implements Colorable {
 
-    LocalDate productionDate;
-    String model;
-    String country;
-    int maxSpeed;
-    int sitsCount;
-    boolean engineOn;
-    static int carCounter = 0;
+    private LocalDate productionDate;
+    private String model;
+    private String country;
+    private String color;
+    private int maxSpeed;
+    private int sitsCount;
+    private boolean engineOn;
+    private static int carCounter = 0;
 
     public Car() {
+        carCounter++;
+    }
+
+    public Car(String color) {
+        this.color = color;
         carCounter++;
     }
 
@@ -27,6 +33,10 @@ public class Car {
         this.sitsCount = sitsCount;
         this.country = country;
         carCounter++;
+    }
+
+    public void showColorable() {
+        System.out.println("Color of car is " + this.color);
     }
 
     public void countCars() {
@@ -75,6 +85,14 @@ public class Car {
 
     public void setProductionDate(LocalDate productionDate) {
         this.productionDate = productionDate;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
     }
 
     public String getModel() {
@@ -126,6 +144,7 @@ public class Car {
                 ", engineOn=" + engineOn +
                 ", sitsCount=" + sitsCount +
                 ", country='" + country + '\'' +
+                ", color='" + color + '\'' +
                 '}';
     }
 }
