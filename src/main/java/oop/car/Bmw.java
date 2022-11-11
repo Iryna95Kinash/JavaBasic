@@ -1,4 +1,4 @@
-package main.java.oop;
+package main.java.oop.car;
 
 public class Bmw extends Car {
 

@@ -1,6 +1,6 @@
-package main.java.oop;
+package main.java.oop.human;
 
-public class Doctor extends Human{
+public class Doctor extends Human {
 
     public void writingPrescription() {
         System.out.println("Doctor write a prescription to the patient");

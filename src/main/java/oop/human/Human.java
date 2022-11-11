@@ -1,4 +1,6 @@
-package main.java.oop;
+package main.java.oop.human;
+
+import main.java.oop.Printer;
 
 public class Human {
 

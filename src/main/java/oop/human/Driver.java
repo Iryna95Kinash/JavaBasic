@@ -1,4 +1,4 @@
-package main.java.oop;
+package main.java.oop.human;
 
 public class Driver extends Human {
 

@@ -1,4 +1,7 @@
-package main.java.oop;
+package main.java.oop.car;
+
+import main.java.oop.Colorable;
+import main.java.oop.Printer;
 
 import java.time.LocalDate;
 
@@ -17,25 +20,21 @@ public class Car implements Colorable {
         carCounter++;
     }
 
-    public Car(String color) {
-        this.color = color;
-        carCounter++;
-    }
-
     public Car(String model, String country) {
         this.model = model;
         this.country = country;
         carCounter++;
     }
 
-    public Car(int maxSpeed, int sitsCount, String country) {
+    public Car(int maxSpeed, int sitsCount, String country, String color) {
         this.maxSpeed = maxSpeed;
         this.sitsCount = sitsCount;
         this.country = country;
+        this.color = color;
         carCounter++;
     }
 
-    public void showColorable() {
+    public void showColor() {
         System.out.println("Color of car is " + this.color);
     }
 

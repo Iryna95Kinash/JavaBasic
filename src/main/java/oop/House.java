@@ -27,7 +27,7 @@ public class House implements Colorable {
         houseCounter++;
     }
 
-    public void showColorable() {
+    public void showColor() {
         System.out.println("Color of house is " + this.color);
     }
 
