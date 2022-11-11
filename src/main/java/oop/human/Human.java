@@ -1,15 +1,17 @@
-package main.java.oop;
+package main.java.oop.human;
+
+import main.java.oop.Printer;
 
 public class Human {
 
-    String name;
-    String address;
-    int height;
-    int weight;
-    int age;
-    int birthYear;
-    int speed;
-    static int humanCounter = 0;
+    private String name;
+    private String address;
+    private int height;
+    private int weight;
+    private int age;
+    private int birthYear;
+    private int speed;
+    private static int humanCounter = 0;
 
     public Human() {
         humanCounter++;

@@ -1,15 +1,15 @@
 package main.java.oop;
 
 
-public class House {
+public class House implements Colorable {
 
-    String address;
-    String color;
-    String roofColor;
-    int roomCount;
-    int constructionYear;
-    boolean serenaOn;
-    static int houseCounter = 0;
+    private String address;
+    private String color;
+    private String roofColor;
+    private int roomCount;
+    private int constructionYear;
+    private boolean serenaOn;
+    private static int houseCounter = 0;
 
     public House() {
         houseCounter++;
@@ -25,6 +25,10 @@ public class House {
         this.constructionYear = constructionYear;
         this.color = color;
         houseCounter++;
+    }
+
+    public void showColor() {
+        System.out.println("Color of house is " + this.color);
     }
 
     public void countHouses() {
