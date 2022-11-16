@@ -34,6 +34,10 @@ public class Car implements Colorable {
         carCounter++;
     }
 
+    public void cleanWindow() {
+        System.out.println("Car window cleaning by wipers...");
+    }
+
     public void showColor() {
         System.out.println("Color of car is " + this.color);
     }
@@ -78,7 +82,7 @@ public class Car implements Colorable {
     }
 
 
-    public LocalDate getProductionDate() {
+    private LocalDate getProductionDate() {
         return productionDate;
     }
 

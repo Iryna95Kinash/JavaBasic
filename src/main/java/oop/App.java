@@ -24,6 +24,10 @@ public class App {
         Doctor doctor = new Doctor();
         Driver driver = new Driver();
 
+        car.cleanWindow();
+        mercedes.cleanWindow();
+
+        System.out.println();
 
         house2.showColor();
         car.showColor();
