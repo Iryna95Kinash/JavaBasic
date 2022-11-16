@@ -1,8 +1,6 @@
 package main.java.oop;
 
 public class Casting {
-    public static void main(String[] args) {
-    }
 
     public void intMaxValueOperation() {
         System.out.println("Max value of integer is " + Integer.MAX_VALUE);

@@ -81,6 +81,14 @@ public class Car implements Colorable {
         Printer.printParam(model + " made in " + country);
     }
 
+    public void openingRoof() {
+        System.out.println("Roof is opening in car");
+    }
+
+    public void workingAirbag() {
+        System.out.println("Airbag is working ib car");
+    }
+
 
     private LocalDate getProductionDate() {
         return productionDate;
