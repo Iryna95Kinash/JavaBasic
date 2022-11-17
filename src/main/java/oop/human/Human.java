@@ -53,6 +53,14 @@ public class Human {
         Printer.printParam("It's a pleasure meet you, good bye");
     }
 
+    public void writingPrescription() {
+        System.out.println("Human can't write a prescription to the patient");
+    }
+
+    public void makingCar() {
+        System.out.println("Human driving hir own car");
+    }
+
     public int getHeight() {
         return height;
     }

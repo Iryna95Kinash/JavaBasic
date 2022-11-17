@@ -6,7 +6,7 @@ public class Doctor extends Human {
         System.out.println("Doctor write a prescription to the patient");
     }
 
-    public void makingPrick() {
+    private void makingPrick() {
         System.out.println("Vaccination is successful");
     }
 }

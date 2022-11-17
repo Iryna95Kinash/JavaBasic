@@ -7,6 +7,6 @@ public class Bmw extends Car {
     }
 
     public void workingAirbag() {
-        System.out.println("Airbag is working");
+        System.out.println("Airbag is working in BMW");
     }
 }

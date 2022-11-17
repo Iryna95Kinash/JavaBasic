@@ -19,11 +19,16 @@ public class App {
         House house = new House();
         House house2 = new House("red");
         House house3 = new House("Halytskyi district", 1885, "brown");
-        Bmw bmw = new Bmw();
-        Mercedes mercedes = new Mercedes();
-        Doctor doctor = new Doctor();
-        Driver driver = new Driver();
+        Car bmw = new Bmw();
+        Car mercedes = new Mercedes();
+        Human doctor = new Doctor();
+        Human driver = new Driver();
+        Casting casting = new Casting();
 
+        car.cleanWindow();
+        mercedes.cleanWindow();
+
+        System.out.println();
 
         house2.showColor();
         car.showColor();
@@ -73,5 +78,10 @@ public class App {
         house.serenaOn();
         house.locatedIn("Frankivskyi district");
         house.builtIn("red", 1925);
+
+        casting.intMaxValueOperation();
+        casting.intLongAction();
+        casting.rangeProviding();
+        casting.floatIntCasting();
     }
 }

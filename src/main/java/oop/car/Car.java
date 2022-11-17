@@ -34,6 +34,10 @@ public class Car implements Colorable {
         carCounter++;
     }
 
+    public void cleanWindow() {
+        System.out.println("Car window cleaning by wipers...");
+    }
+
     public void showColor() {
         System.out.println("Color of car is " + this.color);
     }
@@ -77,8 +81,16 @@ public class Car implements Colorable {
         Printer.printParam(model + " made in " + country);
     }
 
+    public void openingRoof() {
+        System.out.println("Roof is opening in car");
+    }
 
-    public LocalDate getProductionDate() {
+    public void workingAirbag() {
+        System.out.println("Airbag is working ib car");
+    }
+
+
+    private LocalDate getProductionDate() {
         return productionDate;
     }
 
